@@ -54,4 +54,8 @@ Enhanced object literals
 
 </ul>
 
+# Nguồn tham khảo: 
+
+- Javascript F8 Official
+- Link: https://www.youtube.com/watch?v=0SJE9dYdpps&list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5
 
