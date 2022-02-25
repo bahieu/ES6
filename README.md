@@ -59,3 +59,80 @@ Enhanced object literals
 - Javascript F8 Official
 - Link: https://www.youtube.com/watch?v=0SJE9dYdpps&list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5
 
+-----------------------------------------------------------------------------------
+
+## Arrow funtion
+<ul>
+<li> Là dạng rút gọn của định nghĩa hàm truyền thống, nhưng có 1 số hạn chế và không thể dùng được trong tất cả trường hợp
+
+<li> Khác nhau và hạn chế của hàm Arrow:
+<ul>
+<li> Không có kết nói với this hoặc supper và không thể dùng như phương thức
+<li> Không có đối số, hoặc những từ khóa new.target
+<li> Không phù hợp với các phương thức gọi, áp dụng và gắn kết dựa trên phạm vi
+<li> Không thể dùng như contructor để tạo đối tượng
+<li> Không thể dùng yield trong thân hàm
+</ul>
+<li> Phân biệt giữa Arrow function và function trong JS:
+<ul>
+<li> Arrow function thường ngắn gọn hơn function
+<li> Arrow function không bind this
+<li> Arrow function không bind arguments
+<li> Arrow function không phù hợp làm method cho object
+<li> Arrow function không thể sử dụng làm hàm constructor
+<li> Arrow function không có thuộc tính prototype
+<li> Arrow function không được hoisted
+</ul>
+</ul>
+
+--------------------------------------------------------------------------------------
+## Class
+
+<ul>
+<li> Là 1 khuôn mẫu để tạo ra đối tượng
+<li> Có 2 cách tạo ra class
+<ul>
+<li>  class declaration
+<li>  class expression
+</ul> 
+
+### **Các phương thức của class**
+
+ ***Contructor***
+<li> Là 1 method đặc biệt để tạo và khởi tạo 1 đối tượng từ 1 class nào đó
+<li> Mỗi class chỉ có 1 phương thức tên "contructor"
+
+ **Getter và Setter**
+<li>Getter
+<ul>
+<li> Getter method được sử dụng để truy cập các thuộc tính của 1 đối tượng.
+<li> Dùng từ khóa get để tạo getter method
+<li> Thông thường thì có bao nhiêu thuộc tính thì sẽ có bấy nhiêu getter method trong class
+</ul>
+<li> Setter
+<ul>
+<li> Cho phép thay đổi giá trị thuộc tính của đối tượng
+<li> Dùng từ khóa set để tạo setter method
+<li> Tương tự getter thì có bao nhiêu thuộc tính thì sẽ có bấy nhiêu setter method trong class
+</ul>
+
+ **Static methods**
+<li> Sử dụng từ khóa static để định nghĩa 1 static method
+<li> Được dùng để tạo các chức năng tiện ích của ứng dụng
+Hosting đối với class:
+<li> Phải khai báo 1 lớp trước khi sử dụng nó
+
+**Kế thừa class (inheritance)**
+<li> Để kế thừa 1 class nào đó ta sử dụng từ khóa extends
+<li> Phương thức super() là phương thức tham chiếu đến lớp cha.
+<li> Khi gọi đến super() thì nó sẽ gọi đến phương thức khởi tạo của lớp cha và có quyền truy cập đến các thuộc tính và phương thức khởi tạo của lớp cha.
+<li> Cũng có thể gọi phương thức của lớp cha thông qua super() khi overwride phương thức đó.
+
+**Từ khóa this trong class**
+<li> this thường được chỉ đến Object chứa phương thức đang được gọi thực thi
+</ul>
+
+## Tài liệu tham khảo: 
+- https://vi-magento.com/tim-hieu-arrow-function-trong-javascript/
+- https://niithanoi.edu.vn/class-trong-javascript.html#:~:text=Class%20c%C3%B3%20th%E1%BB%83%20hi%E1%BB%83u%20l%C3%A0,v%C3%A0%20ph%C6%B0%C6%A1ng%20th%E1%BB%A9c%20gi%E1%BB%91ng%20nhau.
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes?retiredLocale=vi#class_expressions

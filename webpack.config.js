@@ -2,8 +2,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
-    main: [
-      './src/index.js',      
+    main: [      
+      './src/libs/demoClass3.js' ,     
+      './src/libs/demoClass2.js' ,     
+      './src/libs/demoClass1.js' ,     
+      './src/libs/demoClass.js',     
+      './src/libs/demoArrowFunction.js'     
+
     ]
 
   },
